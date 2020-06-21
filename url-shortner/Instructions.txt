@@ -1,0 +1,16 @@
+INSTRUCTIONS:
+
+We need to install virtual environment to run application.
+Inside the Flask-project folder, we need to install virtual environment.
+(First install python)
+
+Commands:
+py -3 -m venv <give any name to folder>
+Now we'll seea folder made with many files inside it.
+
+To activate virtual environment:
+<folder name>\Scripts\activate
+This will acivate the virtual environment.
+
+To install flask:
+pip install flask   
