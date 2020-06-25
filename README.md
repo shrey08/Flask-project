@@ -1,2 +1,3 @@
 # Flask-project
-The web project is under development using flask.
+The URL Shortner web project is developed using flask framework. 
+For the front end appearance bootstrap is made in use. 
