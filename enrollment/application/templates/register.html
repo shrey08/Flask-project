@@ -1,11 +1,10 @@
-
     {% extends "layout.html" %}
    
     {% block content %}
 
     <div class="container">
         <form name="login" action="" method="post" novalidate>
-            <fieldset>
+            <fieldset class="form-group">
                 <legend>{{ title }}</legend>
                 {{form.hidden_tag()}}
                 <p>
