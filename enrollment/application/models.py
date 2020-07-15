@@ -3,7 +3,7 @@ from application import db
 from werkzeug.security import generate_password_hash, check_password_hash
 
 class User(db.Document):
-    user_id     =   db.IntField( unique=True )
+    user_id     =   db.IntField( unique=True, sparse=True )
     first_name  =   db.StringField( max_length=50 )
     last_name   =   db.StringField( max_length=50 )
     email       =   db.StringField( max_length=30, unique=True )
@@ -23,5 +23,5 @@ class Course(db.Document):
     term        =   db.StringField( max_length=25 )
 
 class Enrollment(db.Document):
-    user_id     =   db.IntField()
+    user_id     =   db.IntField(sparse=True)
     courseID    =   db.StringField( max_length=10 )
